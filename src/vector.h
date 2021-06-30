@@ -137,7 +137,7 @@ class vector {
 	std::size_t total_count_ = 0;
 	std::size_t current_count_ = 0;
 	const static int kExpansionFactor = 2;
-	const static int kInitialCount = 2;
+	const static int kInitialCount = 1;
 };
 
 }  // namespace fig

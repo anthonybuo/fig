@@ -1,0 +1,19 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+        "label": "Run tests",
+        "type": "shell",
+        "command": "bazel test :all_tests",
+        "presentation": {
+            "reveal": "always",
+            "panel": "new"
+        }
+    },
+    {
+        "label": "Clean",
+        "type": "shell",
+        "command": "bazel clean --expunge && cd test && bazel clean --expunge",
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        
+        {
+            "name": "(gdb) Launch",
+            "request": "launch",
+            "args": [],
+            "stopAtEntry": false,
+            "environment": [],
+            "externalConsole": false,
+            "preLaunchTask": "Build Example (Debug)",
+            "type": "cppdbg",
+            "MIMode": "gdb",
+            "program": "${workspaceFolder}/bazel-out/k8-dbg/bin/game",
+            "cwd": "${workspaceFolder}/bazel-out/k8-dbg/bin/game.runfiles/__main__/",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ],
+            "sourceFileMap": {
+                "/proc/self/cwd/src/": "${workspaceFolder}/src/"
+            }
+        }
+    ]
+}
